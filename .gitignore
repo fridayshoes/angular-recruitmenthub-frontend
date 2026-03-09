@@ -1,0 +1,47 @@
+# Angular build output
+/dist/
+/out-tsc/
+/tmp/
+
+# Node dependencies
+/node_modules/
+
+# Environment files (if you keep secrets locally)
+src/environments/environment*.ts
+
+# Angular cache
+/.angular/cache/
+
+# Compiled TypeScript
+*.js
+*.js.map
+
+# Logs
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+pnpm-debug.log
+*.log
+
+# IDE / Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Optional: package manager lock files (if you standardise on one)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Python virtual environments
+venv/
+env/
+.venv/
+.env/
