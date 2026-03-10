@@ -14,7 +14,7 @@ export class TrainersServiceService {
   private apiUrl = 'http://127.0.0.1:8000/trainer/add_trainer/';
 
   // API endpoint for retrieving all trainers (GET request)
-  private getApiUrl = 'http://127.0.0.1:8000/trainer/get_trainers/';
+  private getApiUrl = 'http://127.0.0.1:8000/trainer/get_trainer/';
 
   // Inject Angular's HttpClient to make HTTP requests
   constructor(private http: HttpClient) {}

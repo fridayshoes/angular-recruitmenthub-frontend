@@ -1,1 +1,33 @@
 <p>home works!</p>
+
+<div class="container">
+  <h2 class="title">Registered Trainers</h2>
+
+  <table class="trainer-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Contact</th>
+        <th>Address</th>
+        <th>Tech Stack</th>
+        <th>Experience</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let trainer of trainers">
+        <td>{{ trainer.id }}</td>
+        <td>{{ trainer.name }}</td>
+        <td>{{ trainer.contact }}</td>
+        <td>{{ trainer.address }}</td>
+        <td>{{ trainer.tech_stack }}</td>
+        <td>{{ trainer.total_experience }} yrs</td>
+      </tr>
+
+      <tr *ngIf="trainers.length === 0">
+        <td colspan="6" class="no-data">No Trainers Registered</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
